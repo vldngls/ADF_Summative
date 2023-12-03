@@ -1,16 +1,17 @@
 package com.example.afd_summativeexam;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.ArrayAdapter;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SlambookAct extends AppCompatActivity {
 
@@ -71,9 +72,13 @@ public class SlambookAct extends AppCompatActivity {
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        // Optional: Add further actions on OK button click
+                        // Proceed to ExitSplash activity
+                        Intent intent = new Intent(SlambookAct.this, ExitSplash.class);
+                        startActivity(intent);
+                        finish(); // Optional: Close the current activity
                     }
                 })
                 .show();
     }
+
 }
