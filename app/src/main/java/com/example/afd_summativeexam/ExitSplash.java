@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ExitSplash extends AppCompatActivity {
 
-    private static final int SPLASH_DURATION = 2000; // Adjust the duration as needed
+    private static final int SPLASH_DURATION = 5000; // Adjust the duration as needed
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

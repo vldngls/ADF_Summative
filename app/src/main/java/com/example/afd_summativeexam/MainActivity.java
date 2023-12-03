@@ -2,8 +2,8 @@ package com.example.afd_summativeexam;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.os.Handler;
+import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int SPLASH_DURATION = 2000; // Adjust the duration as needed
+    private static final int SPLASH_DURATION = 5000; // Adjust the duration as needed
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +24,21 @@ public class MainActivity extends AppCompatActivity {
         final Button startButton = findViewById(R.id.startButton);
 
         // Fade-in animation for the logo
-        Animation fadeIn = new AlphaAnimation(0, 1);
-        fadeIn.setInterpolator(new DecelerateInterpolator());
-        fadeIn.setDuration(1000);
+        Animation logoFadeIn = new AlphaAnimation(0, 1);
+        logoFadeIn.setInterpolator(new DecelerateInterpolator());
+        logoFadeIn.setDuration(1000);
 
         // Delayed start for the splash screen
-        logo.startAnimation(fadeIn);
+        logo.startAnimation(logoFadeIn);
+
+        // Create a separate fade-in animation for the start button
+        Animation buttonFadeIn = new AlphaAnimation(0, 1);
+        buttonFadeIn.setInterpolator(new DecelerateInterpolator());
+        buttonFadeIn.setDuration(1000);
+
         new Handler().postDelayed(() -> {
             startButton.setVisibility(View.VISIBLE);
-            startButton.startAnimation(fadeIn);
+            startButton.startAnimation(buttonFadeIn);
         }, SPLASH_DURATION);
     }
 
