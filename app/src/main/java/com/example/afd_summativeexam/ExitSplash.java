@@ -20,6 +20,9 @@ public class ExitSplash extends AppCompatActivity {
 
         TextView thankYouMessage = findViewById(R.id.thankYouMessage);
 
+        // Set initial visibility of the TextView
+        thankYouMessage.setAlpha(1.0f);
+
         // Fade-in animation for the "Thank You" message
         Animation fadeIn = new AlphaAnimation(0.0f, 1.0f);
         fadeIn.setDuration(1000);
