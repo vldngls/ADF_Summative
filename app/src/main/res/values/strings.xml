@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AFD Slam Book</string>
+    <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="danfu">DAnFu</string>
+    <string-array name="course_options">
+        <item>BCS</item>
+        <item>BSIT</item>
+        <item>BSBIO</item>
+        <item>BSA</item>
+        <item>BSBA</item>
+        <item>HRM</item>
+    </string-array>
+
+    <string-array name="snack_options">
+        <item>Pizza</item>
+        <item>Burger</item>
+        <item>Fries</item>
+        <item>Ice cream</item>
+    </string-array>
+</resources>
+
