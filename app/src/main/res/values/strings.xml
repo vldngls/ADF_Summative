@@ -5,6 +5,7 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="danfu">DAnFu</string>
+    <string name="enter">Enter</string>
     <string-array name="course_options">
         <item>BCS</item>
         <item>BSIT</item>

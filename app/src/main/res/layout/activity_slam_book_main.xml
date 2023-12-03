@@ -8,32 +8,18 @@
     android:background="#FFFBDA"
     tools:context=".SlamBookMain">
 
-    <TextView
-        android:id="@+id/textViewSlamBook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Slam Book"
-        android:layout_marginTop="156dp"
-        android:textColor="#2C2C2C"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="0dp"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
         android:hint="Enter Name"
-        app:layout_constraintTop_toBottomOf="@id/textViewSlamBook"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editTextAge"
-        android:layout_width="0dp"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
         android:hint="Age"
         android:inputType="number"
@@ -56,7 +42,8 @@
             android:id="@+id/radioButtonMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male"/>
+            android:layout_marginLeft="64dp"
+            android:text="Male" />
 
         <RadioButton
             android:id="@+id/radioButtonFemale"
@@ -67,7 +54,7 @@
 
     <Spinner
         android:id="@+id/spinnerCourse"
-        android:layout_width="0dp"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/radioGroupGender"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,4 +72,14 @@
         app:layout_constraintTop_toBottomOf="@id/spinnerCourse"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="322dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/slambook" />
 </androidx.constraintlayout.widget.ConstraintLayout>

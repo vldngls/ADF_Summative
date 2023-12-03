@@ -12,6 +12,12 @@
         android:theme="@style/Theme.AFD_SummativeExam"
         tools:targetApi="31">
         <activity
+            android:name=".splash_screen"
+            android:exported="false" />
+        <activity
+            android:name=".ExitSplash"
+            android:exported="false" />
+        <activity
             android:name=".SlambookAct"
             android:exported="false" />
         <activity
